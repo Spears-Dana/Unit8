@@ -1,0 +1,13 @@
+form label {
+  display: inline-block;
+  width: 225px;
+  font-weight: bold;
+}
+
+body, td, th {
+  font-family:  "Comic Sans MS", "Baskerville Old Face", "Times New Roman", "Trebuchet MS";
+  background-image: url("tipback.png");
+  background-color:  #000000;
+  margin-left: 100px;
+  color:  #ffffff;
+}
