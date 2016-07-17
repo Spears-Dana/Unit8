@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tip Meister</title>
+<link rel="stylesheet" type="text/css" href="TipMeister.css" />
+
+<script>
+var a;
+var p;
+var tip;
+var total;
+
+function calc()  {
+  a = document.getElementById("a").value;
+  p = document.getElementById("p").value;
+  tip =  parseFloat(a) * (parseFloat(p)/100);
+  total = parseFloat(a) + parseFloat(tip);
+  document.getElementById("tip").innerHTML = "Tip:  " + tip.toFixed(2);
+  document.getElementById("total").innerHTML = "Total:  " + total.toFixed(2);
+}
+</script>
+</head>
+<body>
+
+<form>
+<label>Amount: &nbsp;<input type="number" id = "a"></label>
+<label>Percent (whole number): &nbsp;<input type="number" id = "p"></label>
+<input type="button" onclick="calc();" value="Calculate" />
+</form>
+<br>
+<div id="tip"></div>
+<div id="total"></div>
+
+</body>
+</html>
